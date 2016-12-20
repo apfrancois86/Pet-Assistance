@@ -286,6 +286,8 @@ footer {
   opacity: 0.8;
   position: relative;
   overflow: hidden; }
+  .training:hover > .training-detail {
+    left: 0; }
   .training ul {
     align-self: flex-end; }
   .training .training-detail {
@@ -298,10 +300,7 @@ footer {
     left: -300%;
     top: 0;
     height: 100%;
-    transition: all 1s ease-in 300ms; }
-  .training:hover + .training-detail {
-    left: 0;
-    top: 0; }
+    transition: left 0.7s ease-in 300ms; }
 
 .coaching {
   background: url(../img/coaching.jpg) center no-repeat;
