@@ -105,19 +105,32 @@ footer h2 {
 
 .service-wrap div {
   font-family: 'Kumar One', cursive;
-  color: white; }
+  color: #eaf6de; }
   .service-wrap div h2 {
-    font-size: 2em; }
+    font-size: 2em;
+    text-shadow: 4px 4px 4px #2c6700; }
   .service-wrap div ul {
-    font-size: 1.5em; }
+    font-size: 1.15em;
+    text-shadow: 4px 4px 4px #2c6700; }
 .service-wrap div div {
   font-family: 'Permanent Marker', cursive;
   color: #013870;
   text-shadow: 0px 0px 0px black; }
+  .service-wrap div div:hover {
+    color: #013870;
+    cursor: pointer; }
 
 .training-detail {
   font-family: 'Permanent Marker', cursive;
   color: #013870; }
+  .training-detail h3 {
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px; }
+  .training-detail li {
+    margin-bottom: 5px;
+    text-shadow: 0px 0px 0px black; }
 
 header {
   display: flex;
@@ -283,9 +296,12 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  opacity: 0.8;
+  opacity: 0.9;
   position: relative;
   overflow: hidden; }
+  .training:hover {
+    cursor: pointer;
+    color: #fff; }
   .training:hover > .training-detail {
     left: 0; }
   .training ul {
@@ -300,7 +316,7 @@ footer {
     left: -300%;
     top: 0;
     height: 100%;
-    transition: left 0.7s ease-in 300ms; }
+    transition: left 0.7s ease-in-out 200ms; }
 
 .coaching {
   background: url(../img/coaching.jpg) center no-repeat;
@@ -310,6 +326,9 @@ footer {
   justify-content: space-between;
   padding: 30px;
   opacity: 0.8; }
+  .coaching:hover {
+    cursor: pointer;
+    color: #fff; }
   .coaching ul {
     align-self: flex-end; }
 
@@ -321,20 +340,26 @@ footer {
   justify-content: space-between;
   padding: 30px;
   opacity: 0.8; }
+  .walking:hover {
+    cursor: pointer;
+    color: #fff; }
   .walking ul {
     align-self: flex-end; }
     .walking ul li {
       padding-bottom: 10px;
-      margin-left: 100px; }
+      margin-left: 50px; }
 
 .pet-sitting {
-  background: url(../img/pet-sitting.jpg) left no-repeat;
+  background: url(../img/pet-sitting.png) center no-repeat;
   background-size: cover;
   width: 60%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 30px;
   opacity: 0.8; }
+  .pet-sitting:hover {
+    cursor: pointer;
+    color: #fff; }
   .pet-sitting ul {
     align-self: flex-end; }
 
@@ -346,6 +371,9 @@ footer {
   justify-content: space-between;
   padding: 30px;
   opacity: 0.8; }
+  .bathing:hover {
+    cursor: pointer;
+    color: #fff; }
   .bathing ul {
     align-self: flex-end; }
     .bathing ul li {
@@ -359,6 +387,9 @@ footer {
   justify-content: space-between;
   padding: 30px;
   opacity: 0.8; }
+  .nail-trimming:hover {
+    cursor: pointer;
+    color: #fff; }
   .nail-trimming ul {
     align-self: flex-end; }
 

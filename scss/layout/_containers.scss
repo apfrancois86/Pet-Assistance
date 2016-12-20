@@ -89,9 +89,13 @@
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  opacity: 0.8;
+  opacity: 0.9;
   position: relative;
   overflow: hidden;
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+  }
   &:hover > .training-detail {
     left: 0;
   }
@@ -108,7 +112,7 @@
     left: -300%;
     top: 0;
     height: 100%;
-    transition: left 0.7s ease-in 300ms;
+    transition: left 0.7s ease-in-out 200ms;
   }
 }
 .coaching {
@@ -119,6 +123,10 @@
   justify-content: space-between;
   padding: 30px;
   opacity: 0.8;
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+  }
   ul {
     align-self: flex-end;
   }
@@ -131,22 +139,30 @@
   justify-content: space-between;
   padding: 30px;
   opacity: 0.8;
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+  }
   ul {
     align-self: flex-end;
     li {
       padding-bottom: 10px;
-      margin-left: 100px;
+      margin-left: 50px;
     }
   }
 }
 .pet-sitting {
-  background: url(../img/pet-sitting.jpg) left no-repeat;
+  background: url(../img/pet-sitting.png) center no-repeat;
   background-size: cover;
   width: 60%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 30px;
   opacity: 0.8;
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+  }
   ul {
     align-self: flex-end;
   }
@@ -159,6 +175,10 @@
   justify-content: space-between;
   padding: 30px;
   opacity: 0.8;
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+  }
   ul {
     align-self: flex-end;
     li {
@@ -174,6 +194,10 @@
   justify-content: space-between;
   padding: 30px;
   opacity: 0.8;
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+  }
   ul {
     align-self: flex-end;
   }

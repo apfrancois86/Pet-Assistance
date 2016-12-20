@@ -74,22 +74,37 @@ footer {
 .service-wrap {
   div {
     font-family: 'Kumar One', cursive;
-    color: white;
-
+    color: $mint-cream;
     h2 {
       font-size: 2em;
+      text-shadow: 4px 4px 4px $kelly-green;
     }
     ul {
-      font-size: 1.5em;
+      font-size: 1.15em;
+      text-shadow: 4px 4px 4px $kelly-green;
     }
   }
   div div {
     font-family: 'Permanent Marker', cursive;
     color: $blue;
     text-shadow: 0px 0px 0px black;
+    &:hover {
+      color: $blue;
+      cursor: pointer;
+    }
   }
 }
 .training-detail {
   font-family: 'Permanent Marker', cursive;
   color: $blue;
+  h3 {
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+  li {
+    margin-bottom: 5px;
+    text-shadow: 0px 0px 0px black;
+  }
 }
