@@ -67,7 +67,7 @@
 
 .service-container  {
   width: 100%;
-  height: 1300px;
+  height: 1375px;
   padding: 30px 0;
   margin: 0 auto;
   background-color: $mint-cream;
@@ -77,7 +77,7 @@
     flex-wrap: wrap;
     margin: 0 auto;
     div {
-      height: 410px;
+      height: 435px;
     }
   }
 
@@ -123,12 +123,29 @@
   justify-content: space-between;
   padding: 30px;
   opacity: 0.8;
+  position: relative;
+  overflow: hidden;
   &:hover {
     cursor: pointer;
     color: #fff;
   }
+  &:hover > .coaching-detail {
+    left: 0;
+  }
   ul {
     align-self: flex-end;
+  }
+  .coaching-detail {
+    position: absolute;
+    background-color: #fff;
+    z-index: 10;
+    width: 100%;
+    padding: 15px 20px 20px 20px;
+    opacity: 1;
+    left: -300%;
+    top: 0;
+    height: 100%;
+    transition: left 0.7s ease-in-out 200ms;
   }
 }
 .walking {
@@ -139,15 +156,32 @@
   justify-content: space-between;
   padding: 30px;
   opacity: 0.8;
+  position: relative;
+  overflow: hidden;
   &:hover {
     cursor: pointer;
     color: #fff;
+  }
+  &:hover > .walking-detail {
+    left: 0;
+  }
+  .walking-detail {
+    position: absolute;
+    background-color: #fff;
+    z-index: 10;
+    width: 100%;
+    padding: 20px;
+    opacity: 1;
+    left: -300%;
+    top: 0;
+    height: 100%;
+    transition: left 0.7s ease-in-out 200ms;
   }
   ul {
     align-self: flex-end;
     li {
       padding-bottom: 10px;
-      margin-left: 50px;
+
     }
   }
 }
@@ -159,12 +193,32 @@
   justify-content: space-between;
   padding: 30px;
   opacity: 0.8;
+  position: relative;
+  overflow: hidden;
   &:hover {
     cursor: pointer;
     color: #fff;
   }
+  &:hover > .pet-sitting-detail {
+    left: 0;
+  }
+  .pet-sitting-detail {
+    position: absolute;
+    background-color: #fff;
+    z-index: 10;
+    width: 100%;
+    padding: 20px;
+    opacity: 1;
+    left: -300%;
+    top: 0;
+    height: 100%;
+    transition: left 0.7s ease-in-out 200ms;
+  }
   ul {
     align-self: flex-end;
+    li {
+      padding-bottom: 10px;
+    }
   }
 }
 .bathing {
@@ -175,9 +229,26 @@
   justify-content: space-between;
   padding: 30px;
   opacity: 0.8;
+  position: relative;
+  overflow: hidden;
   &:hover {
     cursor: pointer;
     color: #fff;
+  }
+  &:hover > .bathing-detail {
+    left: 0;
+  }
+  .bathing-detail {
+    position: absolute;
+    background-color: #fff;
+    z-index: 10;
+    width: 100%;
+    padding: 20px;
+    opacity: 1;
+    left: -300%;
+    top: 0;
+    height: 100%;
+    transition: left 0.7s ease-in-out 200ms;
   }
   ul {
     align-self: flex-end;
@@ -194,11 +265,31 @@
   justify-content: space-between;
   padding: 30px;
   opacity: 0.8;
+  position: relative;
+  overflow: hidden;
   &:hover {
     cursor: pointer;
     color: #fff;
   }
+  &:hover > .nail-trimming-detail {
+    left: 0;
+  }
+  .nail-trimming-detail {
+    position: absolute;
+    background-color: #fff;
+    z-index: 10;
+    width: 100%;
+    padding: 20px;
+    opacity: 1;
+    left: -300%;
+    top: 0;
+    height: 100%;
+    transition: left 0.7s ease-in-out 200ms;
+  }
   ul {
     align-self: flex-end;
+    li {
+      padding-bottom: 10px;
+    }
   }
 }

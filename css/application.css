@@ -120,17 +120,21 @@ footer h2 {
     color: #013870;
     cursor: pointer; }
 
-.training-detail {
+.training-detail, .coaching-detail, .walking-detail, .pet-sitting-detail, .bathing-detail, .nail-trimming-detail {
   font-family: 'Permanent Marker', cursive;
   color: #013870; }
-  .training-detail h3 {
+  .training-detail h3, .coaching-detail h3, .walking-detail h3, .pet-sitting-detail h3, .bathing-detail h3, .nail-trimming-detail h3 {
     font-size: 2em;
     text-align: center;
     text-decoration: underline;
     margin-bottom: 10px; }
-  .training-detail li {
+  .training-detail li, .coaching-detail li, .walking-detail li, .pet-sitting-detail li, .bathing-detail li, .nail-trimming-detail li {
     margin-bottom: 5px;
     text-shadow: 0px 0px 0px black; }
+  .training-detail h4, .coaching-detail h4, .walking-detail h4, .pet-sitting-detail h4, .bathing-detail h4, .nail-trimming-detail h4 {
+    font-size: 1.5em; }
+  .training-detail h5, .coaching-detail h5, .walking-detail h5, .pet-sitting-detail h5, .bathing-detail h5, .nail-trimming-detail h5 {
+    margin-top: 35px; }
 
 header {
   display: flex;
@@ -277,7 +281,7 @@ footer {
 
 .service-container {
   width: 100%;
-  height: 1300px;
+  height: 1375px;
   padding: 30px 0;
   margin: 0 auto;
   background-color: #eaf6de; }
@@ -287,7 +291,7 @@ footer {
     flex-wrap: wrap;
     margin: 0 auto; }
     .service-container .service-wrap div {
-      height: 410px; }
+      height: 435px; }
 
 .training {
   background: url(../img/dog-training.jpg) right no-repeat;
@@ -325,12 +329,27 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  opacity: 0.8; }
+  opacity: 0.8;
+  position: relative;
+  overflow: hidden; }
   .coaching:hover {
     cursor: pointer;
     color: #fff; }
+  .coaching:hover > .coaching-detail {
+    left: 0; }
   .coaching ul {
     align-self: flex-end; }
+  .coaching .coaching-detail {
+    position: absolute;
+    background-color: #fff;
+    z-index: 10;
+    width: 100%;
+    padding: 15px 20px 20px 20px;
+    opacity: 1;
+    left: -300%;
+    top: 0;
+    height: 100%;
+    transition: left 0.7s ease-in-out 200ms; }
 
 .walking {
   background: url(../img/dogwalking.jpg) center no-repeat;
@@ -339,15 +358,29 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  opacity: 0.8; }
+  opacity: 0.8;
+  position: relative;
+  overflow: hidden; }
   .walking:hover {
     cursor: pointer;
     color: #fff; }
+  .walking:hover > .walking-detail {
+    left: 0; }
+  .walking .walking-detail {
+    position: absolute;
+    background-color: #fff;
+    z-index: 10;
+    width: 100%;
+    padding: 20px;
+    opacity: 1;
+    left: -300%;
+    top: 0;
+    height: 100%;
+    transition: left 0.7s ease-in-out 200ms; }
   .walking ul {
     align-self: flex-end; }
     .walking ul li {
-      padding-bottom: 10px;
-      margin-left: 50px; }
+      padding-bottom: 10px; }
 
 .pet-sitting {
   background: url(../img/pet-sitting.png) center no-repeat;
@@ -356,12 +389,29 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  opacity: 0.8; }
+  opacity: 0.8;
+  position: relative;
+  overflow: hidden; }
   .pet-sitting:hover {
     cursor: pointer;
     color: #fff; }
+  .pet-sitting:hover > .pet-sitting-detail {
+    left: 0; }
+  .pet-sitting .pet-sitting-detail {
+    position: absolute;
+    background-color: #fff;
+    z-index: 10;
+    width: 100%;
+    padding: 20px;
+    opacity: 1;
+    left: -300%;
+    top: 0;
+    height: 100%;
+    transition: left 0.7s ease-in-out 200ms; }
   .pet-sitting ul {
     align-self: flex-end; }
+    .pet-sitting ul li {
+      padding-bottom: 10px; }
 
 .bathing {
   background: url(../img/dog-bathing.jpg) center no-repeat;
@@ -370,10 +420,25 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  opacity: 0.8; }
+  opacity: 0.8;
+  position: relative;
+  overflow: hidden; }
   .bathing:hover {
     cursor: pointer;
     color: #fff; }
+  .bathing:hover > .bathing-detail {
+    left: 0; }
+  .bathing .bathing-detail {
+    position: absolute;
+    background-color: #fff;
+    z-index: 10;
+    width: 100%;
+    padding: 20px;
+    opacity: 1;
+    left: -300%;
+    top: 0;
+    height: 100%;
+    transition: left 0.7s ease-in-out 200ms; }
   .bathing ul {
     align-self: flex-end; }
     .bathing ul li {
@@ -386,11 +451,28 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  opacity: 0.8; }
+  opacity: 0.8;
+  position: relative;
+  overflow: hidden; }
   .nail-trimming:hover {
     cursor: pointer;
     color: #fff; }
+  .nail-trimming:hover > .nail-trimming-detail {
+    left: 0; }
+  .nail-trimming .nail-trimming-detail {
+    position: absolute;
+    background-color: #fff;
+    z-index: 10;
+    width: 100%;
+    padding: 20px;
+    opacity: 1;
+    left: -300%;
+    top: 0;
+    height: 100%;
+    transition: left 0.7s ease-in-out 200ms; }
   .nail-trimming ul {
     align-self: flex-end; }
+    .nail-trimming ul li {
+      padding-bottom: 10px; }
 
 /*# sourceMappingURL=application.css.map */
