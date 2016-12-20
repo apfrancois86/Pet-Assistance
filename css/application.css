@@ -310,6 +310,8 @@ footer {
     left: 0; }
   .training ul {
     align-self: flex-end; }
+    .training ul li {
+      padding-bottom: 10px; }
   .training .training-detail {
     position: absolute;
     background-color: #fff;
@@ -321,6 +323,9 @@ footer {
     top: 0;
     height: 100%;
     transition: left 0.7s ease-in-out 200ms; }
+  @media (max-width: 1000px) {
+    .training {
+      width: 100%; } }
 
 .coaching {
   background: url(../img/coaching.jpg) center no-repeat;
@@ -350,6 +355,12 @@ footer {
     top: 0;
     height: 100%;
     transition: left 0.7s ease-in-out 200ms; }
+  @media (max-width: 1000px) {
+    .coaching {
+      width: 50%; } }
+  @media (max-width: 775px) {
+    .coaching {
+      width: 100%; } }
 
 .walking {
   background: url(../img/dogwalking.jpg) center no-repeat;
@@ -381,6 +392,12 @@ footer {
     align-self: flex-end; }
     .walking ul li {
       padding-bottom: 10px; }
+  @media (max-width: 1000px) {
+    .walking {
+      width: 50%; } }
+  @media (max-width: 775px) {
+    .walking {
+      width: 100%; } }
 
 .pet-sitting {
   background: url(../img/pet-sitting.png) center no-repeat;
@@ -412,6 +429,9 @@ footer {
     align-self: flex-end; }
     .pet-sitting ul li {
       padding-bottom: 10px; }
+  @media (max-width: 1000px) {
+    .pet-sitting {
+      width: 100%; } }
 
 .bathing {
   background: url(../img/dog-bathing.jpg) center no-repeat;
@@ -443,6 +463,9 @@ footer {
     align-self: flex-end; }
     .bathing ul li {
       padding-bottom: 10px; }
+  @media (max-width: 775px) {
+    .bathing {
+      width: 100%; } }
 
 .nail-trimming {
   background: url(../img/nail-trimming.jpg) center no-repeat;
@@ -474,5 +497,8 @@ footer {
     align-self: flex-end; }
     .nail-trimming ul li {
       padding-bottom: 10px; }
+  @media (max-width: 775px) {
+    .nail-trimming {
+      width: 100%; } }
 
 /*# sourceMappingURL=application.css.map */

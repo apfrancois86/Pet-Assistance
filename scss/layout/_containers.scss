@@ -80,7 +80,6 @@
       height: 435px;
     }
   }
-
 }
 .training {
   background: url(../img/dog-training.jpg) right no-repeat;
@@ -101,6 +100,9 @@
   }
   ul {
     align-self: flex-end;
+    li {
+      padding-bottom: 10px;
+    }
   }
   .training-detail {
     position: absolute;
@@ -113,6 +115,9 @@
     top: 0;
     height: 100%;
     transition: left 0.7s ease-in-out 200ms;
+  }
+  @media (max-width:$brk-1) {
+    width: 100%;
   }
 }
 .coaching {
@@ -146,6 +151,12 @@
     top: 0;
     height: 100%;
     transition: left 0.7s ease-in-out 200ms;
+  }
+  @media (max-width:$brk-1) {
+    width: 50%;
+  }
+  @media (max-width:$brk-2) {
+    width: 100%;
   }
 }
 .walking {
@@ -181,8 +192,13 @@
     align-self: flex-end;
     li {
       padding-bottom: 10px;
-
     }
+  }
+  @media (max-width:$brk-1) {
+    width: 50%;
+  }
+  @media (max-width:$brk-2) {
+    width: 100%;
   }
 }
 .pet-sitting {
@@ -220,6 +236,9 @@
       padding-bottom: 10px;
     }
   }
+  @media (max-width:$brk-1) {
+    width: 100%;
+  }
 }
 .bathing {
   background: url(../img/dog-bathing.jpg) center no-repeat;
@@ -256,6 +275,9 @@
       padding-bottom: 10px;
     }
   }
+  @media (max-width:$brk-2) {
+    width: 100%;
+  }
 }
 .nail-trimming {
   background: url(../img/nail-trimming.jpg) center no-repeat;
@@ -291,5 +313,8 @@
     li {
       padding-bottom: 10px;
     }
+  }
+  @media (max-width:$brk-2) {
+    width: 100%;
   }
 }
