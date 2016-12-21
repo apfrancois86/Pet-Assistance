@@ -354,12 +354,22 @@
     min-height: 400px;
     padding: 15px;
     img {
+      align-self: flex-start;
       width: 90%;
       height: 380px;
       border-radius: 20%;
       filter: brightness(80%);
       box-shadow: 4px 4px 4px $gray;
       opacity: 0.8;
+      @media (max-width: $brk-1) {
+        height: 400px;
+      }
+      @media (max-width: $brk-3) {
+        height: 275px;
+      }
+    }
+    @media (max-width: $brk-1) {
+      flex-wrap: wrap-reverse;
     }
   }
 }
@@ -371,11 +381,11 @@
   height: 100%;
   @media (max-width: $brk-1) {
     width: 100%;
+    margin: 2px auto;
   }
 }
 .story, .experience {
   width: 50%;
-  height: 100%;
   padding: 25px;
   display: flex;
   flex-direction: column;
@@ -392,6 +402,7 @@
     margin: 0 auto;
   }
 }
+
 .testimonials-wrap {
   padding: 15px;
   .testimonials {
@@ -410,6 +421,9 @@
     }
     p {
       margin-bottom: 10px;
+    }
+    @media (max-width: $brk-1) {
+      width: 100%;
     }
   }
 }
