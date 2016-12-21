@@ -79,7 +79,7 @@ footer {
     color: $kelly-green;
     h2 {
       font-size: 2em;
-      text-shadow: 4px 4px 4px #000;
+      text-shadow: 2px 2px 2px #000;
     }
     ul {
       font-size: 1.15em;
@@ -133,5 +133,9 @@ footer {
   h2 {
     font-size: 1.8em;
     font-weight: bold
+  }
+  p {
+    font-size: 1.2em;
+    line-height: 1.2em;
   }
 }

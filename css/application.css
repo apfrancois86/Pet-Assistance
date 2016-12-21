@@ -111,7 +111,7 @@ footer h2 {
   color: #2c6700; }
   .service-wrap div h2 {
     font-size: 2em;
-    text-shadow: 4px 4px 4px #000; }
+    text-shadow: 2px 2px 2px #000; }
   .service-wrap div ul {
     font-size: 1.15em;
     text-shadow: 2px 2px 2px #000; }
@@ -153,6 +153,9 @@ footer h2 {
   .about-container h2 {
     font-size: 1.8em;
     font-weight: bold; }
+  .about-container p {
+    font-size: 1.2em;
+    line-height: 1.2em; }
 
 header {
   display: flex;
@@ -546,30 +549,82 @@ footer {
 
 .about-container {
   background-color: #eaf6de;
-  color: #2c6700;
+  color: #013870;
   width: 100%;
-  height: 86vh;
-  display: flex; }
+  background: url(../img/trees.jpg) center no-repeat;
+  background-size: cover; }
+  .about-container h2 {
+    margin-bottom: 10px; }
   .about-container .about-left {
     display: flex;
-    height: 700px;
-    width: 40%;
-    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 400px;
+    width: 100%;
     padding: 15px; }
     .about-container .about-left img {
-      width: 400px;
-      height: 600px; }
+      width: 250px;
+      height: 360px;
+      border-radius: 40%;
+      box-shadow: 4px 4px 4px #808080; }
   .about-container .about-right {
-    padding: 15px;
     display: flex;
-    height: 700px;
-    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
     padding: 15px;
-    width: 60%; }
-    .about-container .about-right div {
-      width: 85%;
-      margin: 50px auto; }
-      .about-container .about-right div h2 {
-        margin-bottom: 10px; }
+    min-height: 400px;
+    padding: 15px; }
+    .about-container .about-right img {
+      width: 90%;
+      height: 380px;
+      border-radius: 20%;
+      filter: brightness(80%);
+      box-shadow: 4px 4px 4px #808080;
+      opacity: 0.8; }
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%; }
+  @media (max-width: 1000px) {
+    .about-image {
+      width: 100%; } }
+
+.story, .experience {
+  width: 50%;
+  height: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaf6de;
+  border-radius: 50px;
+  opacity: 0.8; }
+  .story:hover, .experience:hover {
+    opacity: 1; }
+  @media (max-width: 1000px) {
+    .story, .experience {
+      width: 100%;
+      margin: 0 auto; } }
+
+.testimonials-wrap {
+  padding: 15px; }
+  .testimonials-wrap .testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 65%;
+    background-color: #eaf6de;
+    border-radius: 50px;
+    opacity: 0.8;
+    padding: 25px; }
+    .testimonials-wrap .testimonials:hover {
+      opacity: 1; }
+    .testimonials-wrap .testimonials p {
+      margin-bottom: 10px; }
 
 /*# sourceMappingURL=application.css.map */

@@ -12,27 +12,27 @@ $(document).ready(function(){
     $(".service-container").hide();
     $(".about-container").hide();
     $(".contact-container").hide();
-    $(".nav-container").fadeIn(2000).delay(4000);
+    $(".nav-container").fadeIn(1000).delay(3000);
   });
   $(".services").click(function(event){
     event.preventDefault();
     $(".nav-container").hide();
     $(".about-container").hide();
     $(".contact-container").hide();
-    $(".service-container").fadeIn(2000).delay(4000);
+    $(".service-container").fadeIn(1000).delay(3000);
   });
   $(".about").click(function(event){
     event.preventDefault();
     $(".nav-container").hide();
     $(".about-container").hide();
     $(".service-container").hide();
-    $(".about-container").fadeIn(2000).delay(4000);
+    $(".about-container").fadeIn(1000).delay(3000);
   });
   $(".contact").click(function(event){
     event.preventDefault();
     $(".nav-container").hide();
     $(".about-container").hide();
     $(".service-container").hide();
-    $(".contact-container").fadeIn(2000).delay(4000);
+    $(".contact-container").fadeIn(1000).delay(3000);
   });
 });
