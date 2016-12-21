@@ -103,6 +103,9 @@ footer h2 {
     .tag-line {
       font-size: 0.85em; } }
 
+.service-container {
+  display: none; }
+
 .service-wrap div {
   font-family: 'Kumar One', cursive;
   color: #2c6700; }
@@ -534,5 +537,9 @@ footer {
   @media (max-width: 775px) {
     .nail-trimming {
       width: 100%; } }
+
+.about-container {
+  background-color: #eaf6de;
+  color: #2c6700; }
 
 /*# sourceMappingURL=application.css.map */

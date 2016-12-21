@@ -70,7 +70,9 @@ footer {
 }
 
 //Services Page
-
+.service-container {
+  display: none;
+}
 .service-wrap {
   div {
     font-family: 'Kumar One', cursive;
@@ -123,3 +125,5 @@ footer {
     margin-top: 35px;
   }
 }
+
+// About Page

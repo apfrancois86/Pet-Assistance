@@ -1,8 +1,38 @@
-let url= ["index.html","services.html","about.html", ""]
-
 $(document).ready(function(){
-  $(".top-scroll").click(function() {
+  $(".top-scroll").click(function(event) {
+    event.preventDefault();
     $("html, body").animate({ scrollTop: 0 }, "slow");
-    return false;
+  });
+  $(".small").click(function(event){
+    event.preventDefault();
+    $(".menu").toggle();
+  });
+  $(".logo").click(function(event){
+    event.preventDefault();
+    $(".service-container").hide();
+    $(".about-container").hide();
+    $(".contact-container").hide();
+    $(".nav-container").fadeIn(2000).delay(4000);
+  });
+  $(".services").click(function(event){
+    event.preventDefault();
+    $(".nav-container").hide();
+    $(".about-container").hide();
+    $(".contact-container").hide();
+    $(".service-container").fadeIn(2000).delay(4000);
+  });
+  $(".about").click(function(event){
+    event.preventDefault();
+    $(".nav-container").hide();
+    $(".about-container").hide();
+    $(".service-container").hide();
+    $(".about-container").fadeIn(2000).delay(4000);
+  });
+  $(".contact").click(function(event){
+    event.preventDefault();
+    $(".nav-container").hide();
+    $(".about-container").hide();
+    $(".service-container").hide();
+    $(".contact-container").fadeIn(2000).delay(4000);
   });
 });

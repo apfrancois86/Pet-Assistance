@@ -63,7 +63,7 @@
   }
 }
 
-// Services
+// Services Page
 
 .service-container  {
   width: 100%;
@@ -320,4 +320,10 @@
   @media (max-width:$brk-2) {
     width: 100%;
   }
+}
+
+//About Page
+.about-container {
+  background-color: $mint-cream;
+  color: $kelly-green;
 }
