@@ -1,11 +1,11 @@
 header {
   display: flex;
   justify-content: space-between;
-  height: 8vh;
+  height: 100px;
   background-color: $kelly-green;
   @media (max-width:$brk-3) {
     flex-direction: column;
-    height: 18vh;
+    height: 135px;
   }
   .nav-left, .nav-right {
     display: flex;

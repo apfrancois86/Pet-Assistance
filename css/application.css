@@ -105,13 +105,13 @@ footer h2 {
 
 .service-wrap div {
   font-family: 'Kumar One', cursive;
-  color: #eaf6de; }
+  color: #2c6700; }
   .service-wrap div h2 {
     font-size: 2em;
-    text-shadow: 4px 4px 4px #2c6700; }
+    text-shadow: 4px 4px 4px #000; }
   .service-wrap div ul {
     font-size: 1.15em;
-    text-shadow: 4px 4px 4px #2c6700; }
+    text-shadow: 2px 2px 2px #000; }
 .service-wrap div div {
   font-family: 'Permanent Marker', cursive;
   color: #013870;
@@ -148,12 +148,12 @@ footer h2 {
 header {
   display: flex;
   justify-content: space-between;
-  height: 8vh;
+  height: 100px;
   background-color: #2c6700; }
   @media (max-width: 575px) {
     header {
       flex-direction: column;
-      height: 18vh; } }
+      height: 135px; } }
   header .nav-left, header .nav-right {
     display: flex;
     position: relative; }
@@ -228,6 +228,9 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media (max-width: 575px) {
+    footer {
+      height: 80px; } }
   footer .top-scroll {
     display: flex; }
     footer .top-scroll:hover {
@@ -255,7 +258,7 @@ footer {
   justify-content: flex-start; }
   @media (max-width: 575px) {
     .nav-container {
-      height: 70vh; } }
+      height: 68vh; } }
 
 .landing {
   background: url(../img/michele1.jpg) center no-repeat;

@@ -1,5 +1,4 @@
 footer {
-  // position: absolute;
   bottom: 0;
   width: 100%;
   height: 80px;
@@ -8,6 +7,9 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width:$brk-3) {
+    height: 80px;
+  }
   .top-scroll {
     display: flex;
     &:hover {
