@@ -139,3 +139,21 @@ footer {
     line-height: 1.2em;
   }
 }
+
+// Contact Page
+
+.contact-container {
+  font-family: 'Oswald', sans-serif;
+  color: $blue;
+  h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  label {
+    margin-bottom: 5px;
+  }
+  input {
+    margin-bottom: 10px;
+  }
+}

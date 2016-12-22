@@ -53,6 +53,30 @@ body {
   max-width: 1500px;
   margin: 0 auto; }
 
+.btn {
+  padding: 15px;
+  width: 180px;
+  height: 150px;
+  align-self: center;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  background-color: #013870;
+  font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px gray, 0px 4px #767676, 0px 5px #6c6c6c, 0px 6px #626262, 0px 7px #585858, 0px 8px #4e4e4e, 0px 14px 6px -1px gray;
+  /* shadow */
+  -webkit-background-size: 100%, 100%, 100%, 4px 4px;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0.2))), -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(210, 210, 210, 0.3)), color-stop(20%, rgba(210, 210, 210, 0)), color-stop(80%, rgba(210, 210, 210, 0)), color-stop(100%, rgba(210, 210, 210, 0.3))), -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(20%, rgba(255, 255, 255, 0.5)), color-stop(80%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, 0% 100%, 100% 0%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(40%, rgba(255, 255, 255, 0)), color-stop(40%, #D2D2D1), color-stop(60%, #D2D2D1), color-stop(60%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
+  -webkit-transition: -webkit-transform .1s ease-in-out; }
+  .btn:hover {
+    background-color: #2c6700; }
+  .btn:focus {
+    outline: 0; }
+
 .logo {
   font-family: 'Kumar One', cursive; }
   .logo h1 {
@@ -156,6 +180,18 @@ footer h2 {
   .about-container p {
     font-size: 1.2em;
     line-height: 1.2em; }
+
+.contact-container {
+  font-family: 'Oswald', sans-serif;
+  color: #013870; }
+  .contact-container h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px; }
+  .contact-container label {
+    margin-bottom: 5px; }
+  .contact-container input {
+    margin-bottom: 10px; }
 
 header {
   display: flex;
@@ -556,7 +592,6 @@ footer {
 
 .about-container {
   display: none;
-  background-color: #eaf6de;
   color: #013870;
   width: 100%;
   background: url(../img/trees.jpg) center no-repeat;
@@ -647,5 +682,35 @@ footer {
     @media (max-width: 1000px) {
       .testimonials-wrap .testimonials {
         width: 100%; } }
+
+.contact-container {
+  background: url(../img/trees.jpg) center no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  height: 86vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media (max-width: 580px) {
+    .contact-container {
+      height: 68vh; } }
+  .contact-container form {
+    height: 350px;
+    width: 625px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #eaf6de;
+    border-radius: 20px;
+    opacity: 0.8; }
+    .contact-container form:hover {
+      opacity: 1; }
+    .contact-container form .contact {
+      height: 70px;
+      width: 130px; }
+    .contact-container form .question {
+      height: 200px;
+      margin-bottom: 10px; }
 
 /*# sourceMappingURL=application.css.map */
