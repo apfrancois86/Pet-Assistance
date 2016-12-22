@@ -24,7 +24,7 @@ $(document).ready(function(){
   $(".about").click(function(event){
     event.preventDefault();
     $(".nav-container").hide();
-    $(".about-container").hide();
+    $(".contact-container").hide();
     $(".service-container").hide();
     $(".about-container").fadeIn(1000).delay(3000);
   });

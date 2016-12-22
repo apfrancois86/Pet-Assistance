@@ -108,13 +108,13 @@ footer h2 {
 
 .service-wrap div {
   font-family: 'Kumar One', cursive;
-  color: #2c6700; }
+  color: #fff; }
   .service-wrap div h2 {
     font-size: 2em;
-    text-shadow: 2px 2px 2px #000; }
+    text-shadow: 3px 3px 3px #000; }
   .service-wrap div ul {
     font-size: 1.15em;
-    text-shadow: 2px 2px 2px #000; }
+    text-shadow: 3px 3px 3px #000; }
 .service-wrap div div {
   font-family: 'Permanent Marker', cursive;
   color: #013870;
@@ -273,7 +273,7 @@ footer {
       height: 68vh; } }
 
 .landing {
-  background: url(../img/michele1.jpg) center no-repeat;
+  background: url(../img/trees.jpg) center no-repeat;
   opacity: 0.8;
   background-size: cover; }
 
@@ -327,7 +327,8 @@ footer {
   min-height: 1375px;
   padding: 30px 0;
   margin: 0 auto;
-  background-color: #eaf6de; }
+  background: url(../img/trees.jpg) center no-repeat;
+  background-size: cover; }
   .service-container .service-wrap {
     width: 90%;
     display: flex;
@@ -346,12 +347,13 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  opacity: 0.9;
+  opacity: 0.8;
   position: relative;
   overflow: hidden; }
   .training:hover {
     cursor: pointer;
-    color: #fff; }
+    color: #fff;
+    opacity: 1; }
   .training:hover > .training-detail {
     left: 0; }
   .training ul {
@@ -385,7 +387,8 @@ footer {
   overflow: hidden; }
   .coaching:hover {
     cursor: pointer;
-    color: #fff; }
+    color: #fff;
+    opacity: 1; }
   .coaching:hover > .coaching-detail {
     left: 0; }
   .coaching ul {
@@ -420,7 +423,8 @@ footer {
   overflow: hidden; }
   .walking:hover {
     cursor: pointer;
-    color: #fff; }
+    color: #fff;
+    opacity: 1; }
   .walking:hover > .walking-detail {
     left: 0; }
   .walking .walking-detail {
@@ -457,7 +461,8 @@ footer {
   overflow: hidden; }
   .pet-sitting:hover {
     cursor: pointer;
-    color: #fff; }
+    color: #fff;
+    opacity: 1; }
   .pet-sitting:hover > .pet-sitting-detail {
     left: 0; }
   .pet-sitting .pet-sitting-detail {
@@ -491,7 +496,8 @@ footer {
   overflow: hidden; }
   .bathing:hover {
     cursor: pointer;
-    color: #fff; }
+    color: #fff;
+    opacity: 1; }
   .bathing:hover > .bathing-detail {
     left: 0; }
   .bathing .bathing-detail {
@@ -525,7 +531,8 @@ footer {
   overflow: hidden; }
   .nail-trimming:hover {
     cursor: pointer;
-    color: #fff; }
+    color: #fff;
+    opacity: 1; }
   .nail-trimming:hover > .nail-trimming-detail {
     left: 0; }
   .nail-trimming .nail-trimming-detail {
@@ -548,6 +555,7 @@ footer {
       width: 100%; } }
 
 .about-container {
+  display: none;
   background-color: #eaf6de;
   color: #013870;
   width: 100%;

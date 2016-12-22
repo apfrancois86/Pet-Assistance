@@ -11,7 +11,7 @@
   }
 }
 .landing {
-  background: url(../img/michele1.jpg) center no-repeat ;
+  background: url(../img/trees.jpg) center no-repeat ;
   opacity: 0.8;
   background-size: cover;
 }
@@ -70,7 +70,8 @@
   min-height: 1375px;
   padding: 30px 0;
   margin: 0 auto;
-  background-color: $mint-cream;
+  background: url(../img/trees.jpg) center no-repeat;
+  background-size: cover;
   .service-wrap {
     width: 90%;
     display: flex;
@@ -91,12 +92,13 @@
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  opacity: 0.9;
+  opacity: 0.8;
   position: relative;
   overflow: hidden;
   &:hover {
     cursor: pointer;
     color: #fff;
+    opacity: 1;
   }
   &:hover > .training-detail {
     left: 0;
@@ -136,6 +138,7 @@
   &:hover {
     cursor: pointer;
     color: #fff;
+    opacity: 1;
   }
   &:hover > .coaching-detail {
     left: 0;
@@ -175,6 +178,7 @@
   &:hover {
     cursor: pointer;
     color: #fff;
+    opacity: 1;
   }
   &:hover > .walking-detail {
     left: 0;
@@ -217,6 +221,7 @@
   &:hover {
     cursor: pointer;
     color: #fff;
+    opacity: 1;
   }
   &:hover > .pet-sitting-detail {
     left: 0;
@@ -256,6 +261,7 @@
   &:hover {
     cursor: pointer;
     color: #fff;
+    opacity: 1;
   }
   &:hover > .bathing-detail {
     left: 0;
@@ -295,6 +301,7 @@
   &:hover {
     cursor: pointer;
     color: #fff;
+    opacity: 1;
   }
   &:hover > .nail-trimming-detail {
     left: 0;
@@ -325,6 +332,7 @@
 //About Page
 
 .about-container {
+  display: none;
   background-color: $mint-cream;
   color: $blue;
   width: 100%;
