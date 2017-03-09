@@ -4,7 +4,7 @@
 
 
 ## Description
-This is a rebuild of a pet business website. The new site is created in Sass (SCSS) using responsive design, transitions, and flexbox.
+This is a rebuild of a pet business website. The new site is created in Sass (SCSS) using responsive design, transitions, flexbox, and the PetFinder API.
 
 
 
@@ -22,4 +22,4 @@ Clone repository and edit HTML, CSS, and JS files as needed. To view, visit http
 * Command Line
 
 ## Legal
-Copyright 2016 GPL
+Copyright 2017 GPL

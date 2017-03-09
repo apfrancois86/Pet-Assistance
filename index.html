@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Kumar+One|Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Varela|Walter+Turncoat" rel="stylesheet">
     <link rel="stylesheet" href="css/application.css">
     <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
@@ -13,32 +13,38 @@
     <header><!--Start header-->
       <div class="nav-left">
         <div class="logo">
-          <img src="img/paw-logo.png" alt="dog paw" />
-          <h1>PetAssistance<br><span class="pet-care">Pet Care & Education</span></h1>
+          <h1>PetAssistance</h1>
+          <h1 class="pet-care">Pet Care & Education</h1>
         </div>
       </div>
       <div class="nav-right">
         <ul>
-          <li class="large services">Services</li>
-          <li class="large about">About</li>
-          <li class="large contact">Contact</li>
-          <li class="small">&#9776; Menu</li>
+          <li class="large services"><a href="#service">Services</a></li>
+          <li class="large about"><a href="#about">About</a></li>
+          <li class="large contact"><a href="#contact">Contact</a></li>
+          <li class="small">&#9776;</li>
         </ul>
         <div class="menu">
-          <li class="services">Services</li>
-          <li class="about">About</li>
-          <li class="contact">Contact</li>
+          <li class="services"><a href="#service">Services</a></li>
+          <li class="about"><a href="#about">About</a></li>
+          <li class="contact"><a href="#contact">Contact</a></li>
         </div>
       </div>
     </header><!--End header-->
     <div class="nav-container landing"><!--Start  nav-container-->
       <div class="tag-line">
-        <img src="img/border-image.JPG" alt="bone border" />
-        Our goal is to help pet owners solve problems by giving them the information and assistance they need to achieve an enjoyable relationship with their pet.
+        <h1>Let Us Assist You</h1>
       </div>
+      <div class="down-arrow">
+        <a href="#service"><img src="img/arrow-icon.png" alt="arrow icon"></a>
+      </div>
+      <a href="pet-finder.html"><div class="petFinder">
+        <h2>Search for you next Pet! <span class="smaller">Powered by PetFinder&#169;</span></h2>
+        <h2 id="right-arrow">></h2>
+      </div></a>
     </div><!--End nav-container-->
 
-    <div class="service-container"><!--Start service-container-->
+    <div class="service-container" id="service"><!--Start service-container-->
       <div class="service-wrap"><!--Start service-wrap-->
         <div class="training"><!--Start training-->
           <h2>Dog Training</h2>
@@ -145,23 +151,21 @@
       </div><!--End service-wrap-->
     </div><!--End service-container-->
 
-    <div class="about-container"><!--Start about-container-->
+    <div class="about-container" id="about"><!--Start about-container-->
       <div class="about-left"><!--Start about-left-->
         <div class="about-image">
           <img src="img/michele2.jpg" alt="Michele and dog" />
         </div>
+
+      </div><!--end about-left-->
+      <div class="about-right"><!--Start about-right-->
         <div class="story">
           <h2>My Story</h2>
           <p>Hello! My name is Michele. I had my first dog, Kisha, when I was 8 years old and from then on we were best friends. My foundation working with dogs comes from Kisha and the knowledge my mom taught me about making her a well behaved, happy, and healthy dog. Pairing my love for animals with my interest in science I went into the veterinary field after college. I’ve returned to my hometown in Portland and I am excited to meet the many pets and their families in the community!</p>
         </div>
-      </div><!--end about-left-->
-      <div class="about-right"><!--Start about-right-->
         <div class="experience">
           <h2>My Experience</h2>
           <p>My experience includes interning at a wildcat sanctuary, volunteering at shelters, and serving as the lead technician in a private veterinary practice. As a technician I formed relationships with clients and helped them care for their pets outside of the hospital. This included pet sitting, dog walling, dog bathing, dog training, nail trimming, and coaching for owners who have lots of questions about what is best for their pet. I have found that many owners benefit from education about various products, exercise/weight management, or supplements/medications available that may help their pet.</p>
-        </div>
-        <div class="about-image">
-          <img src="img/michele1.jpg" alt="Michele and dog" />
         </div>
       </div><!--End about-right-->
       <div class="testimonials-wrap"><!--Start testimonials-->
@@ -173,28 +177,29 @@
       </div><!--End testimonials-->
     </div><!--End about-container-->
 
-    <div class="contact-container"><!--Start contact-container-->
+    <div class="contact-container" id="contact"><!--Start contact-container-->
       <div class="image">
-        <img src="img/pug.png" alt="pug" />
-        <img src="img/cat.png" alt="cat with toy" />
+        <img src="img/bulldog.png" alt="bulldog" />
+        <img src="img/siamese.png" alt="cat" />
       </div>
-      <form id="submit" action="" method="post" target="_blank">
+      <form id="submit" action="https://formspree.io/apfrancois86@gmail.com"
+      method="POST">
         <h2>Do you need assistance with your pet? I’d love to hear from you.</h2>
         <label for="name">Your Name:</label>
-        <input type="text" class="contact" placeholder="Enter Name Here">
+        <input name= "name" type="text" class="contact" placeholder="Enter Name Here">
         <label for="email">Your Email:</label>
-        <input type="email" class="contact" placeholder="Enter Email Here" />
+        <input  name= "email" type="email" class="contact" placeholder="Enter Email Here" />
         <label for="question">Tell me about your pet and the services you are interested in!</label>
-        <textarea type="textarea" form="submit" class="question" cols="35" wrap="soft"></textarea>
+        <textarea type="textarea" name="info" form="submit" class="question" cols="35" wrap="soft"></textarea>
         <button class="btn" type="submit">SUBMIT</button>
       </form>
     </div><!--End contact-container-->
 
     <footer><!--Start footer-->
-      <h2>Copyright 2016 PetAssistance</h2>
+      <h2>Copyright 2017 PetAssistance</h2>
       <div class="top-scroll">
-        <h2>&#10132;</h2>
-        <h2>Top</h2>
+        <img src="img/up.png" alt="">
+        <!-- <h2>Top</h2> -->
       </div>
     </footer><!--End footer-->
   </body>

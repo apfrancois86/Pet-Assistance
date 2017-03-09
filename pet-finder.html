@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Kumar+One|Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="css/application.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <title>Pet Assistance- Pet Finder</title>
+  </head>
+  <body>
+    <header><!--Start header-->
+      <div class="nav-left">
+        <div class="logo">
+          <h1>PetAssistance</h1>
+          <h1 class="pet-care">Pet Care & Education</h1>
+        </div>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li class="home"><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </header><!--End header-->
+
+    <div class="petfinder-container"><!--Start container-->
+      <h1>Pet Finder Portal</h1>
+      <form class="petFind">
+      <h2>All animals deserve a good home. Please adopt a pet today!</h2>
+      <label for="type">Type of Pet</label>
+      <select id="type">
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+      <label for="gender">Gender of Pet</label>
+      <select id="gender">
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+      </select>
+      <label for="age">Age of Pet</label>
+      <select id="age">
+        <option value="Baby">Baby</option>
+        <option value="Young">Young</option>
+        <option value="Adult">Adult</option>
+        <option value="Senior">Senior</option>
+      </select>
+      <label for="size">Size of Pet</label>
+      <select id="size">
+        <option value="S">Small</option>
+        <option value="M">Medium</option>
+        <option value="L">Large</option>
+        <option value="XL">Xtra-large</option>
+      </select>
+      <button type="submit" class="btn" name="button">Search</button>
+    </form>
+    </div><!--End container-->
+    <div class="results">
+    </div>
+
+    <footer class="pet-footer"><!--Start footer-->
+      <h2>Copyright 2017 PetAssistance</h2>
+      <div class="top-scroll">
+        <img src="img/up.png" alt="">
+        <!-- <h2>Top</h2> -->
+      </div>
+    </footer><!--End footer-->
+  </body>
+</html>

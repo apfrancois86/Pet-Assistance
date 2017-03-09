@@ -1,29 +1,31 @@
 //Header
 
 .logo {
-  font-family: 'Kumar One', cursive;
+  &:hover {
+    color: $blue;
+    cursor: pointer;
+  }
   h1 {
+    font-family: 'Fontdiner Swanky', cursive;
     margin-top: 15px;
-    text-shadow: 3px 3px 3px $gray;
-    font-size: 2em;
+    text-shadow: 3px 3px 1px $gray;
+    font-size: 2.2em;
     line-height: 20px;
-    &:hover {
-      color: $blue;
-      cursor: pointer;
-    }
   }
   .pet-care {
-    text-shadow: 2px 2px 2px $gray;
-    font-size: 0.5em;
+    text-shadow: 2px 2px 1px $gray;
+    font-size: 1em;
+    margin-top: 5px;
+    text-align: center;
   }
 }
 header {
-  color: white;
+  color: $white;
   ul {
     li {
-      font-family: 'Permanent Marker', cursive;
-      font-size: 1.8em;
-      text-shadow: 2px 2px 2px $gray;
+      font-family: 'Varela', sans-serif;
+      font-size: 1.4em;
+      text-shadow: 2px 2px 0px $gray;
       &:hover {
         color: $blue;
         cursor: pointer;
@@ -31,9 +33,8 @@ header {
     }
   }
 }
-
 .menu {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Varela', sans-serif;
   font-size: 1.5em;
   text-shadow: 2px 2px 2px $gray;
   li {
@@ -44,38 +45,33 @@ header {
   }
 }
 
-//footer
+//Footer
 footer {
   h2 {
-    font-family: sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 1.2em;
     font-weight: bold;
     color: #fff;
-    text-shadow: 2px 2px 2px $gray;
+    text-shadow: 2px 2px 0px $gray;
   }
 }
 
 //Landing Page
-
 .tag-line {
-  font-family: 'Permanent Marker', cursive;
-  color: $blue;
-  font-size: 1.5em;
-  @media (max-width:$brk-1) {
-    font-size: 1.1em;
-  }
-  @media (max-width:$brk-2) {
-    font-size: 0.85em;
+  font-family: 'Walter Turncoat', cursive;
+  color: $white;
+  font-size: 3.5em;
+  text-shadow: 2px 2px 0px $gray;
+  @media (max-width:$brk-3) {
+    font-size: 2.3em;
+    margin-top: 50px;
   }
 }
 
 //Services Page
-.service-container {
-  display: none;
-}
 .service-wrap {
   div {
-    font-family: 'Kumar One', cursive;
+    font-family: 'Walter Turncoat', cursive;
     color: #fff;
     h2 {
       font-size: 2em;
@@ -87,7 +83,7 @@ footer {
     }
   }
   div div {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Varela', sans-serif;
     color: $blue;
     text-shadow: 0px 0px 0px black;
     &:hover {
@@ -97,7 +93,7 @@ footer {
   }
 }
 .training-detail, .coaching-detail, .walking-detail, .pet-sitting-detail, .bathing-detail, .nail-trimming-detail {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Varela', sans-serif;
   color: $blue;
   h3 {
     font-size: 2em;
@@ -129,7 +125,7 @@ footer {
 // About Page
 
 .about-container {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Varela', sans-serif;
   h2 {
     font-size: 1.8em;
     font-weight: bold
@@ -143,7 +139,7 @@ footer {
 // Contact Page
 
 .contact-container {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Varela', sans-serif;
   color: $blue;
   h2 {
     font-size: 1.5em;
